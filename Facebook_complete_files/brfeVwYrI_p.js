@@ -1,0 +1,6 @@
+/*!CK:2159851151!*//*1429199046,*/
+
+if (self.CavalryLogger) { CavalryLogger.start_js(["YS6aA"]); }
+
+__d("AppEventsCombinedBreakdowns",[],function(a,b,c,d,e,f){b.__markCompiled&&b.__markCompiled();e.exports={AGE_GENDER:"AGE_GENDER"};},null);
+__d("FeedLiveUpdateBar",["ArbiterMixin","Animation","Ease","DOM","DOMScroll","Event","Vector","copyProperties","csx"],function(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o){b.__markCompiled&&b.__markCompiled();var p=300;function q(r){this.element=r;this.init();}n(q.prototype,g,{init:function(){if(!this.element)return;this.hide();var r=j.find(this.element,"._2f6b");l.listen(r,'click',this._handleClick.bind(this));},_handleClick:function(event){this.hide();var r=new m(m.getScrollPosition().x,0,'document');k.scrollTo(r,p,false,false,0,function(){k.scrollTo(r,0);this.inform('click');}.bind(this));event.kill();},hide:function(){new h(this.element).from('top',42).to('top',-50).ease(i.sineOut()).duration(250).hide().go();},show:function(){if(!this.element)return;new h(this.element).from('top',-50).to('top',42).ease(i.makePowerOut(3)).duration(400).show().go();}});e.exports=q;},null);
